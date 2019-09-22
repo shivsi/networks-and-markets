@@ -20,8 +20,17 @@ def create_graph(n,p):
 def shortest_path(G,i,j):
     return -1
 
-
-
+def avg:
+        mygraph = create_graph(1000, 0.1)
+        distances = []
+        total = 0
+        while len(distances) != 1000:
+            [start, end] = random.sample(range(1000), 2)
+            dist = shortest_path(mygraph,start,end)
+            if math.isnan(dist) == False:
+                distances.append(dist)
+                print ("start node: " + start + ", end node:"+ end + " and the path length is " + dist)
+                total = total + dist
 
 def main():
 	gr = create_graph(10,0.5)
